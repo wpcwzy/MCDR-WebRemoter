@@ -25,7 +25,7 @@ def loop(server):
         time.sleep(executeInterval)
 
 def start_server():
-    http_server = WSGIServer(('', serverPort), app, handler_class=WebSocketHandler)
+    http_server = WSGIServer(('0.0.0.0', serverPort), app, handler_class=WebSocketHandler)
     http_server.serve_forever()
 
 def on_info(server,info):
