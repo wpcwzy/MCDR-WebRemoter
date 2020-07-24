@@ -1,0 +1,5 @@
+flask
+flask_httpauth
+requests
+gevent
+gevent-websocket
