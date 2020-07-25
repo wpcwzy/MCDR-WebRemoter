@@ -14,7 +14,7 @@ serverUp=False
 #-----Configuration-----
 
 serverPort=8080
-executeInterval=5
+executeInterval=1
 
 def loop(server):
     while True:
