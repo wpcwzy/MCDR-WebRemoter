@@ -33,7 +33,7 @@ def on_info(server,info):
         d = {'output': str(info.content)}
         r = requests.post("http://localhost:"+str(serverPort)+"/upload", data=d,headers=headers)
 
-def on_server_startup(server):
+def on_load(server,old_module):
     global serverUp
     webserver=threading.Thread(target=start_server)
     webserver.setDaemon(True)
